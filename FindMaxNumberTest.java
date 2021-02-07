@@ -5,77 +5,84 @@ import org.junit.Test;
 
 public class FindMaxNumberTest {
 
-    FindMaxNumber max = new FindMaxNumber();
-
     //Test Case 1.1
     @Test
     public void givenFirstNumberMaximum()
     {
-        Integer number = max.maximumNumber(50, 27, 5);
-        Assert.assertEquals((Integer) 50, number);
+        Integer[] integerValues = {50, 27, 5};
+        Integer maximumNumber = new FindMaxNumber<>(integerValues).maximumNumber();
+        Assert.assertEquals((Integer) 50, maximumNumber);
     }
 
     //Test Case 1.2
     @Test
     public void givenSecondNumberMaximum()
     {
-        Integer number = max.maximumNumber(34, 97, 48);
-        Assert.assertEquals((Integer) 97, number);
+        Integer[] integerValues = {34, 97, 48};
+        Integer maximumNumber = new FindMaxNumber<>(integerValues).maximumNumber();
+        Assert.assertEquals((Integer) 97, maximumNumber);
     }
 
     //Test case 1.3
     @Test
     public void givenThirdNumberMaximum()
     {
-        Integer number = max.maximumNumber(4, 30, 45);
-        Assert.assertEquals((Integer) 45, number);
+        Integer[] integerValues = {4, 30, 45};
+        Integer maximumNumber = new FindMaxNumber<>(integerValues).maximumNumber();
+        Assert.assertEquals((Integer) 45, maximumNumber);
     }
 
     //Test Case 2.1
     @Test
     public void givenFirstNumberFloatMaximum()
     {
-        Float number = max.maximumNumber(6.7f, 2.7f, 5.1f);
-        Assert.assertEquals((Float) 6.7f, number);
+        Float[] floatValues = {6.7f, 2.7f, 5.1f};
+        Float maximumNumber = new FindMaxNumber<>(floatValues).maximumNumber();
+        Assert.assertEquals((Float) 6.7f, maximumNumber);
     }
 
     //Test Case 2.2
     @Test
     public void givenSecondNumberFloatMaximum()
     {
-        Float number = max.maximumNumber(3.7f, 9.8f, 4.5f);
-        Assert.assertEquals((Float) 9.8f, number);
+        Float[] floatValues = {3.7f, 9.8f, 4.5f};
+        Float maximumNumber = new FindMaxNumber<>(floatValues).maximumNumber();
+        Assert.assertEquals((Float) 9.8f, maximumNumber);
     }
 
     //Test case 2.3
     @Test
     public void givenThirdNumberFloatMaximum()
     {
-        Float number = max.maximumNumber(4.1f, 3.9f, 7.3f);
-        Assert.assertEquals((Float) 7.3f, number);
+        Float[] floatValues = {4.1f, 3.9f, 7.3f};
+        Float maximumNumber = new FindMaxNumber<>(floatValues).maximumNumber();
+        Assert .assertEquals((Float) 7.3f, maximumNumber);
     }
 
     //Test Case 3.1
     @Test
     public void givenFirstStringMaximum()
     {
-        String number = max.maximumNumber("Banana", "Apple", "Orange");
-        Assert.assertEquals((String) "Banana", number);
+        String[] stringValues = {"Banana", "Apple", "Orange"};
+        String maximumNumber = new FindMaxNumber<>(stringValues).maximumNumber();
+        Assert.assertEquals((String) "Banana", maximumNumber);
     }
 
     //Test Case 3.2
     @Test
     public void givenSecondStringMaximum()
     {
-        String number = max.maximumNumber("Ginger", "Capsicum", "Chili");
-        Assert.assertEquals((String) "Capsicum", number);
+        String[] stringValues = {"Ginger", "Capsicum", "Chili"};
+        String maximumNumber = new FindMaxNumber<>(stringValues).maximumNumber();
+        Assert.assertEquals((String) "Capsicum", maximumNumber);
     }
 
     //Test case 3.3
     @Test
     public void givenThirdStringMaximum()
     {
-        String number = max.maximumNumber("Rose", "Lotus", "Sunflower");
-        Assert.assertEquals((String) "Sunflower", number);
+        String[] stringValues = {"Rose", "Lotus", "Sunflower"};
+        String maximumNumber = new FindMaxNumber<>(stringValues).maximumNumber();
+        Assert.assertEquals((String) "Sunflower", maximumNumber);
     }
 }

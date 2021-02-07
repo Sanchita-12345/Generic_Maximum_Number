@@ -1,7 +1,19 @@
-class FindMaxNumber
+package bridgelabz;
+
+public class FindMaxNumber
 {
-	public static void main(String args[])
-	{
-		System.out.pritln("Welcome to the Generic Find Maximum Number Program");
-	}
+
+    public Integer toPrint(Integer num1, Integer num2, Integer num3)
+    {
+        Integer maximumNumber = num1;
+        if (num2.compareTo(maximumNumber) > 0)
+        {
+            maximumNumber = num2;
+        }
+        else if(num3.compareTo(maximumNumber) > 0)
+        {
+            maximumNumber = num3;
+        }
+        return maximumNumber;
+    }
 }

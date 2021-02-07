@@ -54,4 +54,28 @@ public class FindMaxNumberTest {
         Float numFloat3 = max.toPrintFloat(4.1f, 3.9f, 7.3f);
         Assert.assertEquals((Float) 7.3f, numFloat3);
     }
+
+    //Test Case 3.1
+    @Test
+    public void givenFirstStringMaximum()
+    {
+        String string1 = max.toPrintString("Banana", "Apple", "Orange");
+        Assert.assertEquals((String) "Banana", string1);
+    }
+
+    //Test Case 3.2
+    @Test
+    public void givenSecondStringMaximum()
+    {
+        String string2 = max.toPrintString("Ginger", "Capsicum", "Chili");
+        Assert.assertEquals((String) "Capsicum", string2);
+    }
+
+    //Test case 3.3
+    @Test
+    public void givenThirdStringMaximum()
+    {
+        String string3 = max.toPrintString("Rose", "Lotus", "Sunflower");
+        Assert.assertEquals((String) "Sunflower", string3);
+    }
 }

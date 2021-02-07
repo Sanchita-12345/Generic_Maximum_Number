@@ -10,7 +10,21 @@ public class FindMaxNumber
         {
             maximumNumber = num2;
         }
-        else if(num3.compareTo(maximumNumber) > 0)
+        else if(num3.compareTo(maximumNumber)>0)
+        {
+            maximumNumber = num3;
+        }
+        return maximumNumber;
+    }
+
+    public Float toPrintFloat(Float num1, Float num2, Float num3)
+    {
+        Float maximumNumber = num1;
+        if (num2.compareTo(maximumNumber) > 0)
+        {
+            maximumNumber = num2;
+        }
+        else if(num3.compareTo(maximumNumber)>0)
         {
             maximumNumber = num3;
         }
